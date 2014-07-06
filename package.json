@@ -1,0 +1,21 @@
+{
+  "name": "mine-june",
+  "version": "0.0.0",
+  "description": "My first package json",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "~3.8.5",
+    "gulp-concat": "~2.2.0",
+    "gulp-connect": "~2.0.6",
+    "gulp-jshint": "~1.6.4",
+    "gulp-rename": "~1.2.0",
+    "gulp-sass": "~0.7.2",
+    "gulp-uglify": "~0.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "package-test"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}
