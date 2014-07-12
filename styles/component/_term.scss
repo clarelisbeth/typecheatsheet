@@ -1,0 +1,86 @@
+.term {
+  cursor: pointer;
+  position: relative;
+  overflow: auto;
+  margin-top: $spacing-unit;
+  &.term--two-names {
+    &:before {
+      content: '=';
+      position: absolute;
+      top: 0px;
+      line-height: 59px;
+      left: 50%;
+      margin-left: -10px;
+      font-size: 1.6rem;
+      font-weight: 200;
+      width: 36px;
+      margin-left: -18px;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 0 0 ;
+    }
+    &.is-term-visible {
+      &:before {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(45deg);
+      }
+    }
+    &.term--primary {
+      &:before {
+        content: '&';
+        color: turquoise;
+        font-size: 26px;
+        top: 4px;
+      }
+      .term__name {
+        background: #555;
+        color: turquoise;
+        font-size: 1.7rem
+      }
+    }
+  }
+}
+
+.term__name {
+  background: turquoise;
+  padding: $spacing-unit;
+  margin-bottom: $spacing-unit/2;
+}
+
+.term--two-names {
+  .term__name {
+    float: left;
+    width: 50%;
+  }
+}
+
+
+.term__description {
+  margin: $spacing-unit/2;
+  font-size: 1rem;
+}
+
+.term__description--digital,
+.term__description {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.8s;
+  -moz-transition: max-height 0.8s;
+  transition: max-height 0.8s;
+  background: rgba(turquoise, 0.2);
+
+}
+
+.is-term-visible .term__description--digital,
+.is-term-visible .term__description {
+  max-height: 500px;
+  padding: $spacing-unit/2;
+}
+
+.term__description--digital {
+  font-family: courier;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+

@@ -1,0 +1,25 @@
+
+.pic img{
+  width: 100%;
+}
+
+@media all and (min-width: 600px) {
+  .col {
+    float: left;
+    width: 50%;
+  }  
+}
+
+.work {
+  padding: 20px;
+}
+
+.writing {
+  color: #eee;
+  padding-top: 10px;
+  font-family: 'Josefin Sans', helvetica, sans-serif;
+  p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}

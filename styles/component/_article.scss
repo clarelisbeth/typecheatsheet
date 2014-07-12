@@ -1,0 +1,44 @@
+.article {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.article--type {
+  background: rgba(turquoise,0.3);
+  font-family: 'Josefin Sans', helvetica, sans-serif;
+  color: #555;
+}
+
+
+.article--portfolio {
+  background: black;
+  overflow: auto;
+}
+
+
+.background-pink{
+  background: rgba(coral, 0.3);
+}
+.article--serif {
+  font-family: 'Josefin Slab', serif;
+  padding: 40px 20px;
+  background: rgba(coral, 0.3);
+  margin: 20px;
+}
+.space--upper{
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 640px) {
+  .article--serif {
+    padding: 80px 40px;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .article--serif {
+    padding: 80px;
+  }
+
+}
